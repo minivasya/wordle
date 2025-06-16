@@ -7,12 +7,12 @@ body {
 section {
     margin: 15px auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 22px;
     color: rgb(37, 38, 49);
 }
 
 table {
-    font-size: 23px;
+    font-size: 22px;
     margin: 0 auto;
     border-spacing: 6px;
     cursor: default;
@@ -77,7 +77,7 @@ td {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 22px;
     padding: 15px 20px;
     border-radius: 5px;
     text-align: center;
@@ -96,9 +96,9 @@ td {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 420px;
+    min-width: 390px;
     max-width: 490px;
-    font-size: 25px;
+    font-size: 22px;
     padding: 15px 20px;
     border-radius: 5px;
     text-align: center;
@@ -131,10 +131,10 @@ td {
 #popup-set-body,
 #opup-stat-body,
 #opup-result-body {
-    font-size: 22px;
+    font-size: 19px;
     padding: 15px 20px;
     text-align: left;
-    line-height: 35px;
+    line-height: 29px;
     user-select: none;
 }
 
