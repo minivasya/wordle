@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вордли</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main_sc.js" defer type="module"></script>
+    <script src="simple_slovar.js" defer type="module"></script>
+    <script src="slovar.js" defer type="module"></script>
+    <script src="slovar_proverka.js" defer type="module"></script>
+    <script src="tab_slova.js" defer type="module"></script>
+</head>
+
+<body>
+    <div>
+        <div id="popup-overlay">
+            <div id="popup"></div>
+        </div>
+        <div id="popup-overlay-text">
+            <div id="popup-text">
+                <header class="header-text">ПРАВИЛА ИГРЫ<br></header>
+                <div id="popup-text-body">
+                    Угадайте слово из 5 букв за 6 попыток.<br>
+                    Слово принимается автоматически после ввода пятой буквы.<br>
+                    Если буква <b class="bukvagreen bukvames">зелёная</b>, то она есть в загаданном слове и стоит на правильном месте.<br>
+                    Если буква <b class="bukvayellow bukvames">жёлтая</b>, то она есть в загаданном слове, но стоит в другом месте.<br>
+                    Если буква <b class="bukvagray bukvames">серая</b> - её нет в загаданном слове.<br>
+                    Е и ё считаются одной буквой.<br>
+                </div>
+                <button id='closehelp'>Закрыть</button>
+            </div>
+        </div>
+        <div id="popup-overlay-set">
+            <div id="popup-set">
+                <header class="header-text">НАСТРОЙКИ<br></header>
+                <div id="popup-set-body">
+                    Показать таймер (нельзя отключить, если начали угадывать слово) <input id="timerchek" type="checkbox"><br>
+                    <hr>
+                    Использовать для загадывания большой словарь (сложность выше) <input id="slovarchek" type="checkbox"><br>
+                    <hr>
+                    Отключить анимацию фона <input id="backgr" type="checkbox"><br>
+                    <hr>
+                    Очистить статистику всех игр <input id="statchek" type="checkbox"> <button id='resetstat'>Подтвердить</button>
+                    <hr>
+                </div>
+                <button id='closeset'>Закрыть</button>
+            </div>
+        </div>
+        <div id="popup-overlay-stat">
+            <div id="popup-stat">
+                <header class="header-text">СТАТИСТИКА<br></header>
+                <div id="popup-stat-body">
+                    ...
+                </div>
+                <button id='closestat'>Закрыть</button>
+            </div>
+        </div>
+        <div id="popup-overlay-result">
+            <div id="popup-result">
+                <header class="header-text">ИТОГ ИГРЫ<br></header>
+                <div id="popup-result-body">
+                    ...
+                </div>
+                <button id='closeresult'>Закрыть</button>
+            </div>
+        </div>
+        <div class="mouse-parallax-bg"></div>
+        <section data-menu><b id="help">🛈</b><span id="timer">&nbsp; &nbsp; &nbsp;ВОРДЛИ&nbsp; &nbsp; &nbsp;</span><b id="settings">⚙</b></section>
+        <section data-slova></section>
+        <section data-keyboard></section>
+        <section data-about>
+            <div>
+                Кнопки над полем ввода:<br>
+                🛈 - правила игры<br>
+                ВОРДЛИ - статистика<br>
+                ⚙ - настройки<br><br>
+                Это моя первая работа на JavaScript.<br>
+                Для вопросов и предложений: alexey-v@rambler.ru
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
